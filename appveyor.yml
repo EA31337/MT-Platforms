@@ -9,7 +9,7 @@ install:
 - ps: >-
     If ($env:TARGET_VERSION -eq 4) {
       echo "Downloading MetaTrader 4..."
-      wget "https://web.archive.org/web/20160112133258if_/https://download.mql5.com/cdn/web/metaquotes.software.corp/mt4/mt4setup.exe?utm_campaign=www.metatrader4.com" -OutFile mt_setup.exe
+      wget "https://download.mql5.com/cdn/web/ig.group.limited/mt4/ig4setup.exe" -OutFile mt_setup.exe
     }
     ElseIf ($env:TARGET_VERSION -eq 5) {
       echo "Downloading MetaTrader 5..."
